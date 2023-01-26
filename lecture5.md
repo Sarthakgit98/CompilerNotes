@@ -14,6 +14,8 @@ x86-var: x86 with basic instruction support. No flow control or any such thing.
 
 ### Assign homes
 
+Convention: Stack grows DOWNWARDS
+
 Given a stack as,
 
 |  | <- rbp
