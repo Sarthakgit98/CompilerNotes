@@ -12,6 +12,10 @@ x86-stack(?): Uses x86-like instructions and variables are converted to location
 x86-patched: We don't want instructions like (addq a1 a2) where both a1 and a2 are memory locations. So we normalize it.
 x86-var: x86 with basic instruction support. No flow control or any such thing.
 
+### Select instructions
+
+We convert C-Var to x86-like instructions with variables.
+
 ### Assign homes
 
 Convention: Stack grows DOWNWARDS
@@ -52,7 +56,7 @@ The flatten pass assumed that the language was closed. Generally, we want to mak
 ### Defining X-var
 
 C-var looks something like
-1. var := (op atm1 atm2) | (- atm1 atm2) | (- atm)
+1. var := (+ atm1 atm2) | (- atm1 atm2) | (- atm)
 2. ret atm
 3. ret var
 
@@ -71,6 +75,8 @@ start:
 	addq $52 -8(rbp)
 	movq ....
 	
+## Prelude and conclude
+
 First, we add return address to stack
 
 rsp: stack pointer
