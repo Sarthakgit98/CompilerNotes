@@ -88,7 +88,7 @@ let: {something <type1> <type2>} => {<type1> <type1> <type2>} => {<type2>}
 
 Example, (let x 5 (+ x 3)) => {int int {+ int int}} => {int int int} => int
 
-### Algo for let
+### Type checker Algo for let
 
 For (let var ast body),
 
