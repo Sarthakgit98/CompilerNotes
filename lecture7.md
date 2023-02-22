@@ -54,7 +54,7 @@ We will add edges incrementally.
 Going backwards in the above graph, we get edges incrementally as
 
 (1)	v-rsp
-(2)	w-v, v-rsp
+(2)	w-v, w-rsp
 (3)	x-w, x-rsp
 (4)	phi
 (5)	y-w, y-rsp (We don't add y-x because the instruction is mov x, y. This makes them the same. We COULD add the edge, but it makes the result inefficient.)
