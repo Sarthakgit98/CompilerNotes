@@ -26,7 +26,8 @@ We can see B as a block.
 ### General observations for liveness analysis
 
 > bi = Bi(ai)
-> ai = U (bi+)
+> ai = U (bi+) [if split]
+> ai = bi+ [if join]
 > We do not rely on bi+ = U (ai) or bi+ = Intersection (ai) due to conservation violations
 
 Domain of livesets: Variables in the program
@@ -141,7 +142,7 @@ Also, F : A -> A
 
 ### Now we have,
 
-Monotonic function F
+Monotonic function F (Given in the beginning of general observations for liveness analysis)
 Vector of subsets of program variables A
 Equation X' = F(X)
 Poset relation on A
