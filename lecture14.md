@@ -142,10 +142,10 @@ Also, F : A -> A
 
 ### Now we have,
 
-Monotonic function F (Given in the beginning of general observations for liveness analysis)
-Vector of subsets of program variables A
-Equation X' = F(X)
-Poset relation on A
+> Monotonic function F (Given in the beginning of general observations for liveness analysis)
+> Vector of subsets of program variables A
+> Equation X' = F(X)
+> Poset relation on A
 
 Next time, we will solve the set of equations bi = Bi(ai) OR X' = F(X)
 
