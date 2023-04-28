@@ -2,5 +2,6 @@
 
 There are no notes for lecture 1.
 Lecture 17 missed
+Lecture 24 missed
 
-Lectures done so far: 21
+Lectures done so far: 24
